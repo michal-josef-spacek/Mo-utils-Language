@@ -23,6 +23,43 @@ ERRORS
              Language code '%s' isn't ISO 639-1 code.
              Language with ISO 639-1 code '%s' doesn't exist.
 
+EXAMPLE1
+     use strict;
+     use warnings;
+
+     use Mo::utils::Language qw(check_language);
+
+     my $self = {
+             'key' => 'en',
+     };
+     check_language($self, 'en');
+
+     # Print out.
+     print "ok\n";
+
+     # Output:
+     # ok
+
+EXAMPLE2
+     use strict;
+     use warnings;
+
+     use Error::Pure;
+     use Mo::utils::Language qw(check_language);
+
+     $Error::Pure::TYPE = 'Error';
+
+     my $self = {
+             'key' => 'xx',
+     };
+     check_language($self, 'key');
+
+     # Print out.
+     print "ok\n";
+
+     # Output like:
+     # #Error [...utils.pm:?] Language code 'xx' isn't ISO 639-1 code.
+
 DEPENDENCIES
     Error::Pure, Exporter, List::Util, Locale::Language, Readonly.
 

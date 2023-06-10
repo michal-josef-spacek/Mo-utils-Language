@@ -1,4 +1,6 @@
 Changes
+examples/check_language_fail.pl
+examples/check_language_ok.pl
 inc/Module/Install.pm
 inc/Module/Install/AuthorRequires.pm
 inc/Module/Install/AuthorTests.pm

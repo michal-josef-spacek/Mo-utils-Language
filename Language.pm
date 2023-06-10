@@ -74,6 +74,49 @@ Returns undef.
          Language code '%s' isn't ISO 639-1 code.
          Language with ISO 639-1 code '%s' doesn't exist.
 
+=head1 EXAMPLE1
+
+=for comment filename=check_language_ok.pl
+
+ use strict;
+ use warnings;
+
+ use Mo::utils::Language qw(check_language);
+
+ my $self = {
+         'key' => 'en',
+ };
+ check_language($self, 'en');
+
+ # Print out.
+ print "ok\n";
+
+ # Output:
+ # ok
+
+=head1 EXAMPLE2
+
+=for comment filename=check_language_fail.pl
+
+ use strict;
+ use warnings;
+
+ use Error::Pure;
+ use Mo::utils::Language qw(check_language);
+
+ $Error::Pure::TYPE = 'Error';
+
+ my $self = {
+         'key' => 'xx',
+ };
+ check_language($self, 'key');
+
+ # Print out.
+ print "ok\n";
+
+ # Output like:
+ # #Error [...utils.pm:?] Language code 'xx' isn't ISO 639-1 code.
+
 =head1 DEPENDENCIES
 
 L<Error::Pure>,
