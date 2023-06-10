@@ -4,7 +4,7 @@ use warnings;
 use English;
 use Error::Pure::Utils qw(clean);
 use Mo::utils::Language qw(check_language);
-use Test::More 'tests' => 4;
+use Test::More 'tests' => 5;
 use Test::NoWarnings;
 
 # Test.
@@ -35,3 +35,10 @@ $self = {
 };
 my $ret = check_language($self, 'key');
 is($ret, undef, 'Right language is present (en - 639-1).');
+
+# Test.
+$self = {
+	'key' => undef,
+};
+$ret = check_language($self, 'key');
+is($ret, undef, 'Right language is present (undef).');

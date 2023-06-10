@@ -16,11 +16,23 @@ our $VERSION = 0.01;
 sub check_language {
 	my ($self, $key) = @_;
 
+	_check_key($self, $key) && return;
+
 	if (none { $_ eq $self->{$key} } all_language_codes()) {
 		err "Language code '".$self->{$key}."' isn't ISO 639-1 code.";
 	}
 
 	return;
+}
+
+sub _check_key {
+	my ($self, $key) = @_;
+
+	if (! exists $self->{$key} || ! defined $self->{$key}) {
+		return 1;
+	}
+
+	return 0;
 }
 
 1;
@@ -52,6 +64,7 @@ Mo language utilities for checking of data objects.
  check_language($self, $key);
 
 Check parameter defined by C<$key> if it's ISO 639-1 language code and if language exists.
+Value could be undefined.
 
 Returns undef.
 
