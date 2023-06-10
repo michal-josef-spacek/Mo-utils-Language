@@ -34,4 +34,4 @@ $self = {
 	'key' => 'en',
 };
 my $ret = check_language($self, 'key');
-is($ret, undef, 'Right language is present.');
+is($ret, undef, 'Right language is present (en - 639-1).');
