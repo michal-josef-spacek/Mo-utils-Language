@@ -14,7 +14,7 @@ SUBROUTINES
      check_language($self, $key);
 
     Check parameter defined by $key if it's ISO 639-1 language code and if
-    language exists.
+    language exists. Value could be undefined.
 
     Returns undef.
 
