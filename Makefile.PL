@@ -21,7 +21,7 @@ recursive_author_tests('xt');
 requires 'Error::Pure' => 0.15;
 requires 'Exporter' => 0;
 requires 'List::Util' => 1.33;
-requires 'Locale::Language' => 0;
+requires 'Locale::Language' => 3.58;
 requires 'Readonly' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Mo-utils-Language/issues',
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Mo-utils-Language';

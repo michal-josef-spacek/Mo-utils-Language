@@ -1,5 +1,6 @@
 0.02
  - Add EXAMPLES to doc.
+ - Add minimal version of Locale::Languages, removed from Perl core.
  - Add Wikibase datatype utilities to SEE ALSO section in doc.
  - Regen README file.
 

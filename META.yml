@@ -28,7 +28,7 @@ requires:
   Error::Pure: 0.15
   Exporter: 0
   List::Util: 1.33
-  Locale::Language: 0
+  Locale::Language: 3.58
   Readonly: 0
   perl: 5.6.2
 resources:
