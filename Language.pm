@@ -49,7 +49,7 @@ Mo::utils::Language - Mo language utilities.
 
 =head1 SYNOPSIS
 
- use Mo::utils qw(check_language);
+ use Mo::utils::Language qw(check_language);
 
  check_language($self, $key);
 

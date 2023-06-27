@@ -2,7 +2,7 @@ NAME
     Mo::utils::Language - Mo language utilities.
 
 SYNOPSIS
-     use Mo::utils qw(check_language);
+     use Mo::utils::Language qw(check_language);
 
      check_language($self, $key);
 
