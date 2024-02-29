@@ -1,7 +1,8 @@
 TODO
 ====
 2. Add ISO 639-2 check.
-3.
+3. Rewrite error message to way like Mo::utils.
+4.
 
 Applied
 =======
