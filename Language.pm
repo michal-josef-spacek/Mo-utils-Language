@@ -72,7 +72,6 @@ Returns undef.
 
  check_language():
          Language code '%s' isn't ISO 639-1 code.
-         Language with ISO 639-1 code '%s' doesn't exist.
 
 =head1 EXAMPLE1
 

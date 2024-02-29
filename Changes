@@ -1,5 +1,6 @@
 0.03
  - Add 1.33 version to load of List::Util.
+ - Fix ERROR section in doc.
  - Fix SYNOPSIS section in doc.
  - Update copyright years.
 
