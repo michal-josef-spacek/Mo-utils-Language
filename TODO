@@ -1,10 +1,12 @@
 TODO
 ====
 2. Add ISO 639-2 check.
-3. Rewrite error message to way like Mo::utils.
 4.
 
 Applied
 =======
 1. Examples to doc.
 OK [20230610] skim
+
+3. Rewrite error message to way like Mo::utils.
+OK [20240229] skim

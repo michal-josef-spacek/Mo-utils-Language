@@ -19,7 +19,9 @@ sub check_language {
 	_check_key($self, $key) && return;
 
 	if (none { $_ eq $self->{$key} } all_language_codes()) {
-		err "Language code '".$self->{$key}."' isn't ISO 639-1 code.";
+		err "Parameter '".$key."' doesn't contain valid ISO 639-1 code.",
+			'Value', $self->{$key},
+		;
 	}
 
 	return;
@@ -71,7 +73,8 @@ Returns undef.
 =head1 ERRORS
 
  check_language():
-         Language code '%s' isn't ISO 639-1 code.
+         Parameter '%s' doesn't contain valid ISO 639-1 code.
+                 Value: %s
 
 =head1 EXAMPLE1
 
