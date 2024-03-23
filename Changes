@@ -1,5 +1,6 @@
 0.05
  - Add check_language_639_1() and check_language_639_2() checks.
+ - Fix output of example in doc.
 
 0.04 2024-02-29T16:58:24+01:00
  - Rewrite error message to version like Mo::utils.
