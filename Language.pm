@@ -154,7 +154,7 @@ Returns undef.
  my $self = {
          'key' => 'en',
  };
- check_language($self, 'en');
+ check_language($self, 'key');
 
  # Print out.
  print "ok\n";
@@ -197,7 +197,7 @@ Returns undef.
  my $self = {
          'key' => 'en',
  };
- check_language_639_1($self, 'en');
+ check_language_639_1($self, 'key');
 
  # Print out.
  print "ok\n";
@@ -240,7 +240,7 @@ Returns undef.
  my $self = {
          'key' => 'eng',
  };
- check_language_639_2($self, 'eng');
+ check_language_639_2($self, 'key');
 
  # Print out.
  print "ok\n";
