@@ -103,6 +103,8 @@ Mo language utilities for checking of data objects.
 
  check_language($self, $key);
 
+I<Since version 0.01. Described functionality since version 0.04.>
+
 Check parameter defined by C<$key> if it's ISO 639-1 language code and if language exists.
 Value could be undefined.
 
@@ -112,6 +114,8 @@ Returns undef.
 
  check_language_639_1($self, $key);
 
+I<Since version 0.05.>
+
 Check parameter defined by C<$key> if it's ISO 639-1 language code and if language code exists.
 Value could be undefined.
 
@@ -120,6 +124,8 @@ Returns undef.
 =head2 C<check_language_639_2>
 
  check_language_639_2($self, $key);
+
+I<Since version 0.05.>
 
 Check parameter defined by C<$key> if it's ISO 639-2 language code and if language code exists.
 Value could be undefined.

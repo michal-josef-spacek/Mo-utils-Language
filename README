@@ -15,6 +15,8 @@ SUBROUTINES
   "check_language"
      check_language($self, $key);
 
+    *Since version 0.01. Described functionality since version 0.04.*
+
     Check parameter defined by $key if it's ISO 639-1 language code and if
     language exists. Value could be undefined.
 
@@ -23,6 +25,8 @@ SUBROUTINES
   "check_language_639_1"
      check_language_639_1($self, $key);
 
+    *Since version 0.05.*
+
     Check parameter defined by $key if it's ISO 639-1 language code and if
     language code exists. Value could be undefined.
 
@@ -30,6 +34,8 @@ SUBROUTINES
 
   "check_language_639_2"
      check_language_639_2($self, $key);
+
+    *Since version 0.05.*
 
     Check parameter defined by $key if it's ISO 639-2 language code and if
     language code exists. Value could be undefined.
