@@ -87,9 +87,8 @@ Mo::utils::Language - Mo language utilities.
 
 =head1 SYNOPSIS
 
- use Mo::utils::Language qw(check_language check_language_639_1 check_language_639_2);
+ use Mo::utils::Language qw(check_language_639_1 check_language_639_2);
 
- check_language($self, $key);
  check_language_639_1($self, $key);
  check_language_639_2($self, $key);
 
@@ -102,6 +101,8 @@ Mo language utilities for checking of data objects.
 =head2 C<check_language>
 
  check_language($self, $key);
+
+B<It is deprecated, use other checks.>
 
 I<Since version 0.01. Described functionality since version 0.04.>
 

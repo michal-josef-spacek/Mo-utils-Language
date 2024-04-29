@@ -2,9 +2,8 @@ NAME
     Mo::utils::Language - Mo language utilities.
 
 SYNOPSIS
-     use Mo::utils::Language qw(check_language check_language_639_1 check_language_639_2);
+     use Mo::utils::Language qw(check_language_639_1 check_language_639_2);
 
-     check_language($self, $key);
      check_language_639_1($self, $key);
      check_language_639_2($self, $key);
 
@@ -14,6 +13,8 @@ DESCRIPTION
 SUBROUTINES
   "check_language"
      check_language($self, $key);
+
+    It is deprecated, use other checks.
 
     *Since version 0.01. Described functionality since version 0.04.*
 
