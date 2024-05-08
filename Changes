@@ -1,4 +1,5 @@
 0.08
+ - Remove check_language() subroutine.
 
 0.07 2024-04-29T12:56:43+02:00
  - Add information about module version for checks in doc.
